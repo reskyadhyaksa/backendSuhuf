@@ -51,3 +51,5 @@ app.use(express.static("public"))
 app.listen(process.env.APP_PORT, () => {
     console.log("Server running ...");
 })
+
+export default app;
