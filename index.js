@@ -8,6 +8,7 @@ import AuthRoute from "./routes/AuthRoute.js";
 import UserRoute from "./routes/UserRoute.js";
 import ProductRoute from "./routes/ProductRoute.js";
 import AnalyticsRoute from "./routes/AnalyticsRoute.js";
+import { Server } from "mysql2/typings/mysql/lib/Server.js";
 
 
 dotenv.config();
@@ -49,7 +50,7 @@ app.use(express.static("public"))
 // store.sync();
 
 app.listen(process.env.APP_PORT, () => {
-    console.log("Server running ...");
+    console.log(`Server running ...`);
 })
 
 export default app;
